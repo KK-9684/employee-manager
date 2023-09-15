@@ -142,7 +142,7 @@ class ChartOne extends Component {
                 <span className='block h-2.5 w-full max-w-2.5 rounded-full bg-primary'></span>
               </span>
               <div className='w-full'>
-                <p className='font-semibold text-primary'>Data Laki-Laki</p>
+                <p className='font-semibold text-primary'>Data Man-Man</p>
                 <p className='text-sm font-medium'>14.04.2023 - 14.05.2023</p>
               </div>
             </div>
@@ -151,7 +151,7 @@ class ChartOne extends Component {
                 <span className='block h-2.5 w-full max-w-2.5 rounded-full bg-secondary'></span>
               </span>
               <div className='w-full'>
-                <p className='font-semibold text-secondary'>Data Perempuan</p>
+                <p className='font-semibold text-secondary'>Data Woman</p>
                 <p className='text-sm font-medium'>14.04.2023 - 14.05.2023</p>
               </div>
             </div>

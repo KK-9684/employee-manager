@@ -144,7 +144,7 @@ const DataJabatan = () => {
             <Breadcrumb pageName='Data Jabatan' />
             <Link to="/data-jabatan/form-data-jabatan/add" >
                 <ButtonOne  >
-                    <span>Tambah Jabatan</span>
+                    <span>Add Position</span>
                     <span>
                         <FaPlus />
                     </span>
@@ -174,19 +174,19 @@ const DataJabatan = () => {
                                     No
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Jabatan
+                                    Position
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Gaji Pokok
+                                    Basic Salary
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Tunjangan Transport
+                                    Transport Allowance
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Uang Makan
+                                    Meal allowance
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Aksi
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -234,7 +234,7 @@ const DataJabatan = () => {
                 <div className="flex justify-between items-center mt-4 flex-col md:flex-row md:justify-between">
                     <div className="flex items-center space-x-2">
                         <span className="text-gray-5 dark:text-gray-4 text-sm py-4">
-                            Menampilkan {startIndex + 1}-{Math.min(endIndex, filteredDataJabatan.length)} dari {filteredDataJabatan.length} Data Jabatan
+                            Displaying {startIndex + 1}-{Math.min(endIndex, filteredDataJabatan.length)} from {filteredDataJabatan.length} Data Department
                         </span>
                     </div>
                     <div className="flex space-x-2 py-4">

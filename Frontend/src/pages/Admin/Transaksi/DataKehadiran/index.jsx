@@ -160,14 +160,14 @@ const DataKehadiran = () => {
             <div className='rounded-sm border border-stroke bg-white px-5 pt-2 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-10 mt-6'>
                 <div className='border-b border-stroke py-2 dark:border-strokedark'>
                     <h3 className='font-medium text-black dark:text-white'>
-                        Filter Data Kehadiran Pegawai
+                        Filter Data Officer Attendance 
                     </h3>
                 </div>
 
                 <div className='flex flex-col md:flex-row md:justify-between items-center mt-4'>
                     <div className='relative w-full md:w-1/2 md:mr-2 mb-4 md:mb-0'>
                         <div className='relative'>
-                            <span className='px-6'>Bulan</span>
+                            <span className='px-6'>Month</span>
                             <span className='absolute top-1/2 left-70 z-30 -translate-y-1/2 text-xl'>
                                 <MdOutlineKeyboardArrowDown />
                             </span>
@@ -176,25 +176,25 @@ const DataKehadiran = () => {
                                 onChange={handleBulanChange}
                                 className='relative appearance-none rounded border border-stroke bg-transparent py-2 px-18 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input'
                             >
-                                <option value=''>Pilih Bulan</option>
-                                <option value='Januari'>Januari</option>
-                                <option value='Februari'>Februari</option>
-                                <option value='Maret'>Maret</option>
+                                <option value=''>Select Month</option>
+                                <option value='Januari'>January</option>
+                                <option value='Februari'>February</option>
+                                <option value='Maret'>March</option>
                                 <option value='April'>April</option>
-                                <option value='Mei'>Mei</option>
-                                <option value='Juni'>Juni</option>
-                                <option value='Juli'>Juli</option>
-                                <option value='Agustus'>Agustus</option>
+                                <option value='Mei'>May</option>
+                                <option value='Juni'>June</option>
+                                <option value='Juli'>July</option>
+                                <option value='Agustus'>August</option>
                                 <option value='September'>September</option>
-                                <option value='Oktober'>Oktober</option>
+                                <option value='Oktober'>October</option>
                                 <option value='November'>November</option>
-                                <option value='Desember'>Desember</option>
+                                <option value='Desember'>December</option>
                             </select>
                         </div>
                     </div>
                     <div className='relative w-full md:w-1/2 md:mr-2 mb-4 md:mb-0'>
                         <div className='relative'>
-                            <span className='px-6'>Tahun</span>
+                            <span className='px-6'>Year</span>
                             <input
                                 type='number'
                                 placeholder='Masukkan Tahun...'
@@ -211,7 +211,7 @@ const DataKehadiran = () => {
                         <div className='w-full md:w-auto'>
                             <Link to='/data-kehadiran/form-data-kehadiran/add'>
                                 <ButtonOne>
-                                    <span>Input Kehadiran</span>
+                                    <span>Input Presence</span>
                                     <span>
                                         <FaPlus />
                                     </span>
@@ -229,9 +229,9 @@ const DataKehadiran = () => {
                         return uniqueEntries;
                     }, []).map(data => (
                         <h2 className="px-4 py-2 text-black dark:text-white" key={`${data.bulan}-${data.tahun}`}>
-                            Menampilkan Data Kehadiran Pegawai Bulan :
+                            Displaying Attendance Data of Officers of the Month :
                             <span className="font-medium"> {data.bulan} </span>
-                            Tahun :
+                            Year :
                             <span className="font-medium"> {data.tahun}</span>
                         </h2>
                     ))}
@@ -266,25 +266,25 @@ const DataKehadiran = () => {
                                     NIK
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Nama Pegawai
+                                    Name Employee
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Jabatan
+                                    Position
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Jenis Kelamin
+                                    Gender
                                 </th>
                                 <th className='py-4 text-center px-4 font-medium text-black dark:text-white'>
-                                    Hadir
+                                    Present
                                 </th>
                                 <th className='py-4 text-center px-4 font-medium text-black dark:text-white'>
-                                    Sakit
+                                    Sick
                                 </th>
                                 <th className='py-4 text-center px-4 font-medium text-black dark:text-white'>
                                     Alpha
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Aksi
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -343,7 +343,7 @@ const DataKehadiran = () => {
                 <div className="flex justify-between items-center mt-4 flex-col md:flex-row md:justify-between">
                     <div className="flex items-center space-x-2">
                         <span className="text-gray-5 dark:text-gray-4 text-sm py-4">
-                            Menampilkan {startIndex + 1}-{Math.min(endIndex, filteredDataKehadiran.length)} dari {filteredDataKehadiran.length} Data Kehadiran Pegawai
+                            Featuring {startIndex + 1}-{Math.min(endIndex, filteredDataKehadiran.length)} from {filteredDataKehadiran.length} Data Officer Attendance
                         </span>
                     </div>
                     <div className="flex space-x-2 py-4">

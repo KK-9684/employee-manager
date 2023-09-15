@@ -142,7 +142,7 @@ const SidebarPegawai = ({ sidebarOpen, setSidebarOpen }) => {
                     }`}
                 >
                   <FaRegMoneyBillAlt />
-                  Data Gaji
+                  Data Salary
                 </NavLink>
               </li>
               {/* <!-- Data Gaji Pegawai --> */}
@@ -170,7 +170,7 @@ const SidebarPegawai = ({ sidebarOpen, setSidebarOpen }) => {
                         }}
                       >
                         <FiSettings />
-                        Pengaturan
+                        Arrangement
                         <MdKeyboardArrowDown className={`absolute right-4 top-1/2 -translate-y-1/2 fill-current text-2xl ${open && 'rotate-180'
                           }`} />
                       </NavLink>
@@ -188,7 +188,7 @@ const SidebarPegawai = ({ sidebarOpen, setSidebarOpen }) => {
                                 (isActive && '!text-white')
                               }
                             >
-                              Ubah Password
+                              Change Password
                             </NavLink>
                           </li>
                           <li>

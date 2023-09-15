@@ -23,7 +23,7 @@ const CardThree = () => {
           <h4 className='text-title-md font-bold text-black dark:text-white'>
             {jumlahDataJabatan}
           </h4>
-          <span className='text-sm font-medium'>Data Jabatan</span>
+          <span className='text-sm font-medium'>Data Department</span>
         </div>
       </div>
     </div>

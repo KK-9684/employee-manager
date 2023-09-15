@@ -74,7 +74,7 @@ const DetailDataGaji = () => {
                     <div className='md:w-2/3'>
                         <div className='w-full md:text-lg'>
                             <h2 className='font-medium mb-4 block text-black dark:text-white'>
-                                <span className='inline-block w-32 md:w-40'>Nama</span>
+                                <span className='inline-block w-32 md:w-40'>Name</span>
                                 <span className='inline-block w-7'>:</span>
                                 {data.nama_pegawai}
                             </h2>
@@ -85,18 +85,18 @@ const DetailDataGaji = () => {
                                 {data.nik}
                             </h2>
                             <h2 className='font-medium mb-4 block text-black dark:text-white'>
-                                <span className='inline-block w-32 md:w-40'>Jabatan</span>
+                                <span className='inline-block w-32 md:w-40'>Department</span>
                                 <span className='inline-block w-7'>:</span>
                                 {data.jabatan}
                             </h2>
                             <h2 className='font-medium mb-4 block text-black dark:text-white'>
-                                <span className='inline-block w-32 md:w-40'>Bulan</span>
+                                <span className='inline-block w-32 md:w-40'>Month</span>
                                 <span className='pl-[-8] md:pl-0'></span>
                                 <span className='inline-block w-7'>:</span>
                                 {data.bulan}
                             </h2>
                             <h2 className='font-medium mb-4 block text-black dark:text-white'>
-                                <span className='inline-block w-32 md:w-40'>Tahun</span>
+                                <span className='inline-block w-32 md:w-40'>Year</span>
                                 <span className='inline-block w-7'>:</span>
                                 {data.tahun}
                                 <span className='pl-[-8] md:pl-0'></span>
@@ -110,10 +110,10 @@ const DetailDataGaji = () => {
                                     No
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Keterangan
+                                    Information
                                 </th>
                                 <th className='py-4 px-4 font-medium text-black dark:text-white'>
-                                    Jumlah
+                                    Amount
                                 </th>
                             </tr>
                         </thead>
@@ -123,7 +123,7 @@ const DetailDataGaji = () => {
                                     {index + 1}
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
-                                    Gaji Pokok
+                                    Basic Salary
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
                                     Rp. {data.gaji_pokok}
@@ -134,7 +134,7 @@ const DetailDataGaji = () => {
                                     {index + 2}
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
-                                    Tunjangan Transportasi
+                                    Transportation Allowance
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
                                     Rp. {data.tj_transport}
@@ -145,7 +145,7 @@ const DetailDataGaji = () => {
                                     {index + 3}
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
-                                    Uang Makan
+                                    Meal allowance
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
                                     Rp. {data.uang_makan}
@@ -156,7 +156,7 @@ const DetailDataGaji = () => {
                                     {index + 4}
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
-                                    Potongan
+                                    Piece
                                 </td>
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
                                     Rp. {data.potongan}
@@ -166,7 +166,7 @@ const DetailDataGaji = () => {
                                 <td className='border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
                                 </td>
                                 <td className='font-medium border-b  border-[#eee] dark:border-strokedark py-5 text-right text-black dark:text-white'>
-                                    Total Gaji :
+                                    Total Salary :
                                 </td>
                                 <td className='font-medium border-b border-[#eee] dark:border-strokedark py-5 px-4 text-black dark:text-white'>
                                     Rp. {data.total}
@@ -179,7 +179,7 @@ const DetailDataGaji = () => {
                             <ButtonOne
                                 onClick={onSubmitPrint}
                             >
-                                <span>Cetak Gaji Pegawai</span>
+                                <span>Print Employee Salaries</span>
                                 <span>
                                     <TfiPrinter />
                                 </span>

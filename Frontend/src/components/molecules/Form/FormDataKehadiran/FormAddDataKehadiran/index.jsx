@@ -215,19 +215,19 @@ const FormAddDataKehadiran = () => {
                                         NIK
                                     </th>
                                     <th className="py-4 px-4 font-medium text-black dark:text-white">
-                                        Nama Pegawai
+                                        Name Employee
                                     </th>
                                     <th className="py-4 px-4 font-medium text-black dark:text-white">
-                                        Jabatan
+                                        Position
                                     </th>
                                     <th className="py-4 px-4 font-medium text-black dark:text-white">
-                                        Jenis Kelamin
+                                        Gender
                                     </th>
                                     <th className="py-4 px-4 font-medium text-black dark:text-white">
-                                        Hadir
+                                        Present
                                     </th>
                                     <th className="py-4 px-4 font-medium text-black dark:text-white">
-                                        Sakit
+                                        Sick
                                     </th>
                                     <th className="py-4 px-4 font-medium text-black dark:text-white">
                                         Alpha
